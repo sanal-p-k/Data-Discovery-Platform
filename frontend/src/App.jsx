@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import DataExplorer from "./pages/DataExplorer";
-import Visualizations from "./pages/Visualizations";
+import routes from "./routes";
 
 const App = () => {
   return (
@@ -12,9 +10,9 @@ const App = () => {
         <Header />
         <div className="container mx-auto p-4">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/data-explorer" element={<DataExplorer />} />
-            <Route path="/visualizations" element={<Visualizations />} />
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} element={route.element} />
+            ))}
           </Routes>
         </div>
       </div>

@@ -1,5 +1,6 @@
 from fastapi import status
 from app.models.dataset import Dataset
+from backend.app.db import get_db
 
 def test_query_datasets(client):
     # Add test data to the database

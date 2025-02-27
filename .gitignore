@@ -1,0 +1,43 @@
+
+---
+
+### **5. `.gitignore` (Git Ignore File)**
+
+This file specifies files and directories to ignore in version control.
+
+```gitignore
+# Node.js
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+.venv/
+venv/
+env/
+
+# Docker
+.env
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Build files
+build/
+dist/
+*.egg-info/

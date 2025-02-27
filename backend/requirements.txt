@@ -1,0 +1,22 @@
+# FastAPI and ASGI server
+fastapi==0.109.0
+uvicorn==0.27.0
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9  # For PostgreSQL
+
+# Authentication
+python-jose==3.3.0
+passlib==1.7.4
+
+# Data visualization (optional)
+matplotlib==3.8.2
+pandas==2.1.4
+
+# Testing
+pytest==8.3.4
+httpx==0.26.0
+
+# Environment management
+python-dotenv==1.0.0
